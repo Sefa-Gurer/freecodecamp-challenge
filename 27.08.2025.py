@@ -20,11 +20,10 @@ def evaluate(numbers, operators):
         elif operators[operator_indeks] == "%":
             temp%=numbers[indeks]
 
-        print(temp)
-
     numbers=temp
     return numbers
 
 numbers = [11, 4, 10, 17, 2]
 operators = ['*', '*', '%']
-x=evaluate(numbers,operators)
+result=evaluate(numbers,operators)
+print(result)
