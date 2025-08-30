@@ -21,8 +21,14 @@ def to_camel_case(s):
             s += temp[i]
     return s
 
-s = "hello world"
-s = "ye old-_-sea  faring_buccaneer_-_with a - peg__leg----and a_parrot_ _named- _squawk"
-s = "HELLO WORLD"
-result = to_camel_case(s)
+result = to_camel_case("hello world") #"helloWorld"
+print(result)
+result = to_camel_case("HELLO WORLD") #"helloWorld"
+print(result)
+result = to_camel_case("secret agent-X") #"secretAgentX"
+print(result)
+result = to_camel_case("FREE cODE cAMP") #"freeCodeCamp"
+print(result)
+result = to_camel_case("ye old-_-sea  faring_buccaneer_-_with a - peg__leg----and " \
+"a_parrot_ _named- _squawk") #"yeOldSeaFaringBuccaneerWithAPegLegAndAParrotNamedSquawk"
 print(result)

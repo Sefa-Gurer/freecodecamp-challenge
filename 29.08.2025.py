@@ -10,9 +10,15 @@ def burn_candles(candles, leftovers_needed):
         candles = leftover
 
     candles = total_burned
-
     return candles
 
-candles, leftovers_needed = 7, 2
-result = burn_candles(candles, leftovers_needed)
+result = burn_candles(7, 2) #3
+print(result)
+result = burn_candles(10, 5) #12
+print(result)
+result = burn_candles(20, 3) #29
+print(result)
+result = burn_candles(17, 4) #22
+print(result)
+result = burn_candles(2345, 3) #3517
 print(result)

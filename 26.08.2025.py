@@ -22,5 +22,9 @@ def decode(s):
         s = find_innermost_arr(s)
     return s
 
-result = decode("f(Ce(re))o((e(aC)m)d)p")
+result = decode("(f(b(dc)e)a)") #"abcdef"
+print(result)
+result = decode("((is?)(a(t d)h)e(n y( uo)r)aC)") #"Can you read this?"
+print(result)
+result = decode("f(Ce(re))o((e(aC)m)d)p") #"freeCodeCamp"
 print(result)

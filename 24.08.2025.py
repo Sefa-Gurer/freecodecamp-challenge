@@ -32,8 +32,6 @@ def battle(my_army, opposing_army):
                 opposing_result +=1
             elif i > 0:
                 my_result +=1
-
-        print(my_result,opposing_result)
         
         if my_result > opposing_result:
             my_army = "We won"
@@ -49,5 +47,17 @@ def battle(my_army, opposing_army):
 
     return my_army
 
-result = battle("C@T5", "D0G$")
+result = battle("Hello", "World") #"We lost"
+print(result)
+result = battle("pizza", "salad") #"We won"
+print(result)
+result = battle("C@T5", "D0G$") #"We won"
+print(result)
+result = battle("kn!ght", "orc") #"Opponent retreated"
+print(result)
+result = battle("PC", "Mac") #"We retreated"
+print(result)
+result = battle("Wizards", "Dragons") #"It was a tie"
+print(result)
+result = battle("Mr. Smith", "Dr. Jones") #"It was a tie"
 print(result)
